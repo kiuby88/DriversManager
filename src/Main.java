@@ -18,7 +18,9 @@ public class Main {
         Entity jbossEntity = new JBossEntity();
         Entity mySQLEntity = new MySQLEntity();
 
-        /*Llamadas a JBoss desde las distintas localizaciones*/
+
+
+        /*TEST-Llamadas a JBoss desde las distintas localizaciones*/
         System.out.println("Llamadas a JBoss ** ");
         jbossEntity.startEffector(cloudFoundryContainer);
         jbossEntity.startEffector(herokuContainer);

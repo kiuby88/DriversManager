@@ -42,6 +42,7 @@ public class SoftwareProcessImpl implements Entity {
     }
 
     public void initDriver(MachineLocation machine){
+
         machine.findLocationDriverForEntity(this);
     }
 
