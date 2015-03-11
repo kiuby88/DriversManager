@@ -1,8 +1,8 @@
 import entity.Entity;
 import entity.JBossEntity;
 import entity.MySQLEntity;
-import location.CloudFoundryContainerLocation;
-import location.HerokuContainerLocation;
+import location.paas.CloudFoundryContainerLocation;
+import location.paas.HerokuContainerLocation;
 import location.MachineLocation;
 import location.SshMachineLocation;
 

@@ -2,11 +2,6 @@ package entity;
 
 import location.MachineLocation;
 
-import javax.crypto.Mac;
-
-/**
- * Created by Jose on 11/03/15.
- */
 public class SoftwareProcessImpl implements Entity {
 
 
