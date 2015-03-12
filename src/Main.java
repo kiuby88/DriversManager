@@ -1,6 +1,7 @@
+import driver.Driver;
 import entity.Entity;
-import entity.JBossEntity;
-import entity.MySQLEntity;
+import entity.jboss.JBossEntity;
+import entity.mysql.MySQLEntity;
 import location.paas.CloudFoundryContainerLocation;
 import location.paas.HerokuContainerLocation;
 import location.MachineLocation;

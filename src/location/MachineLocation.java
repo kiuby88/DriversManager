@@ -1,8 +1,9 @@
 package location;
 
+import driver.Driver;
 import entity.SoftwareProcessImpl;
 
 public interface MachineLocation {
 
-    public void findLocationDriverForEntity(SoftwareProcessImpl entity);
+    public Class<? extends Driver> findLocationDriverForEntity(SoftwareProcessImpl entity);
 }

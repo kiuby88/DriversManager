@@ -1,26 +1,30 @@
 package entity;
 
+import driver.Driver;
 import location.MachineLocation;
 
 public class SoftwareProcessImpl implements Entity {
 
 
     @Override
-    public void getCloudFoundryDriver() {
+    public Class<? extends Driver> getCloudFoundryDriver() {
+
         showSelection("**CloudFoundry**");
+        return Driver.class;
     }
 
     @Override
-    public void getHerokuDriver() {
+    public Class<? extends Driver> getHerokuDriver() {
         showSelection("**Heroku**      ");
-
+        return Driver.class;
     }
 
     @Override
-    public void getSshDriver() {
+    public Class<? extends Driver> getSshDriver() {
         showSelection("**Ssh**         ");
-
+        return Driver.class;
     }
+
 
     private void showSelection(String st){
         System.out.println("Se selecciona el Driver de  " + st+ "  para la clase"+this.getClass());
@@ -31,14 +35,15 @@ public class SoftwareProcessImpl implements Entity {
 
         /*First, obtain the machine*/
         MachineLocation machine= obtain_setUp(location);
-
         this.initDriver(machine);
 
     }
 
     public void initDriver(MachineLocation machine){
-
-        machine.findLocationDriverForEntity(this);
+        Class<? extends Driver> driver=null;
+        driver= machine.findLocationDriverForEntity(this);
+        System.out.println("*Selected Driver Class: "+driver);
+        System.out.println();
     }
 
     private MachineLocation obtain_setUp(MachineLocation location){
