@@ -1,7 +1,4 @@
 package entity.mysql;
 
-/**
- * Created by Jose on 12/03/15.
- */
-public class MySQLSshDriver implements MySQLDriver{
+public class MySQLSshDriver implements MySQLDriver {
 }

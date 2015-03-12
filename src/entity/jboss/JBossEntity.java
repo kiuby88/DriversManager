@@ -10,7 +10,7 @@ public class JBossEntity extends SoftwareProcessImpl {
 
         super.getCloudFoundryDriver();
         return (Class<? extends Driver>) JBossCloudFoundryDriver.class;
-}
+    }
 
     @Override
     public Class<? extends Driver> getHerokuDriver() {
